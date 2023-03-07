@@ -5,3 +5,11 @@
   language: script
   always_run: true
   verbose: true
+
+- id: aws-ia-check-for-cfg-files
+  name: Check for files config file changes
+  require_serial: true
+  entry: hooks/check-for-cfg-file.sh
+  language: script
+  always_run: true
+  verbose: true
